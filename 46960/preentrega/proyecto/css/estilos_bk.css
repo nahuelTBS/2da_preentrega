@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+}
+/* estilos del header*/
+.header {
+    /*propiedades del padre*/
+    background-image: url(../assets/img/header.png.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+    /*anidado el primer hijo*/
+    .contenedorNav {
+        background-color:#00fff2;
+
+        .logo {
+            width: 100px;
+        }
+
+        .listaNav {
+            list-style: none;
+            text-align: center;
+
+            .listaItem {
+                /*este no es el posicionamiento que le quiero dar pero con flexbox arreglo luego*/
+                display: inline-block;
+                background-color: aquamarine;
+
+                .listaNav {
+                    color: aqua;
+                    font-size: 2rem;
+                    padding-right: 25px ;
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+.mainIndex{
+    width: 90%;
+    margin: 50px auto;
+    padding-top: 50px;
+
+}
+.tituloPrincipalIndex{
+    font-size: 2.2rem;
+    text-align: center;
+}
+.titulosecond{
+    font-size: 1.8rem;
+    color: black;
+    text-align: center;
+    padding-top: 20px;
+}
+.parrafo{
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.tarjetaindex{
+    width: 94%;
+    margin: 0 auto;
+   text-align: center;
+   padding-bottom: 20px;   
+    .tarjeta{
+        padding-top: 5px;
+        margin-left: 10px;       
+        display: inline-block;
+        background-color: white;
+        width: 350px;
+        height: 400px;
+    }
+}
+/*estilo del footer*/
+.footer{
+   background-color: aqua;
+   color: #561185;
+   padding: 10px;
+   text-align: center;
+    
+    .icon {
+        font-size: 3rem;
+        color: #561185;
+        padding-right: 10px;
+    }
+   .contenedorIcon{
+    display: inline-block;
+   }
+   .contenedorMapa{
+    display: inline-block;
+    .mapa{
+        width: 300px;
+        height: 200px;
+    }
+   }
+   .contenedorInfor{
+    font-size: 1.6rem;
+    text-align: center;
+   }
+  
+ }
+
+  
